@@ -1,8 +1,7 @@
 import React, { useEffect,useState } from "react";
 import "./nav.css";
-import Logo from "/Users/k1rie/Desktop/snakers/src/recursos/logo.png";
-import Heart from "/Users/k1rie/Desktop/snakers/src/recursos/heart.png";
-import Search from "/Users/k1rie/Desktop/snakers/src/recursos/search.svg";
+import Logo from "../recursos/logo.png";
+import Heart from "../recursos/heart.png";
 import { useNavigate } from "react-router-dom";
 
 
