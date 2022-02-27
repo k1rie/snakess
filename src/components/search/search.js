@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import Nav from "../nav/nav"
 import "./search.css"
 import Card from "../card/card";
-import Example from "/Users/k1rie/Desktop/snakers/src/recursos/example.png"
-import Marca from "/Users/k1rie/Desktop/snakers/src/recursos/marca.png"
 
 function Search(props){
 
