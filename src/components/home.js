@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import Nav from "./nav/nav"
 import "./home.css"
-import Sliderimg1 from "../recursos/slider1.jpeg"
-import Sliderimg2 from "../recursos/slider2.jpeg"
-import Sliderimg3 from "../recursos/slider3.jpeg"
-import Sneaker1 from "../recursos/sneakers1.png"
-import Sneaker2 from "../recursos/sneakers2.png"
-import Sneaker3 from "../recursos/sneakers3.png"
-import Sneaker4 from "../recursos/sneakers4.png"
-import Sneaker5 from "../recursos/sneakers5.png"
+import Sliderimg1 from "./recursos/slider1.jpeg"
+import Sliderimg2 from "./recursos/slider2.jpeg"
+import Sliderimg3 from "./recursos/slider3.jpeg"
+import Sneaker1 from "./recursos/sneakers1.png"
+import Sneaker2 from "./recursos/sneakers2.png"
+import Sneaker3 from "./recursos/sneakers3.png"
+import Sneaker4 from "./recursos/sneakers4.png"
+import Sneaker5 from "./recursos/sneakers5.png"
 
 function Home(props){
     function slider(){
