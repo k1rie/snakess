@@ -60,6 +60,7 @@ if(contador === 2){
 return(
     <div className="home__container">
         <div className="slider__container">
+            
 <div className="slider">
 <img className="slider__img img1" src={Sliderimg1}/>
 <img className="slider__img img2" src={Sliderimg2}/>
