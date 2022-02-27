@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react";
+import Home from "./components/home"
+import "./app.css"
+import Search from "./components/search/search";
+import Nav from "./components/nav/nav"
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const [data,setData] = useState()
+
+console.log(process.env.REACT_APP_KEY)
+return(
+
+  <div className="app">
+<BrowserRouter>
+<Nav pasdata={setData}/>
+<Routes>
+<Route path="/" element={<Home/>}/>
+<Route path="/search" element={<Search data={data}/>}/>
+</Routes>
+</BrowserRouter>
+
+</div>
+
+  
+
+)
 }
 
 export default App;

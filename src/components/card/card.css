@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&family=Roboto+Slab:wght@200&family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&family=Roboto+Slab:wght@200&family=Roboto:wght@100&family=Ropa+Sans&display=swap');
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 200px;
+    background: #F4F4F4;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.card__title{
+    text-align: center;
+    
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+font-weight: normal;
+font-size: 1.3rem;
+line-height: 46px;
+
+color: #000000;
+}
+
+.card__main{
+display: flex;
+justify-content: space-around;
+
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.card__price{
+    font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 1.5rem;
+
+color: #808080;
+}
+
+.card__marketvalue{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 1.1rem;
+
+color: #808080
+}
+
+.card__sneakers{
+    width: 120px;
+    height: 100px;
+}
+
+.card__marca{
+    width: 60px;
+    height: 23px;
+}

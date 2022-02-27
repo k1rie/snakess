@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&family=Ropa+Sans&display=swap');
+
+.home__container{
+
+    height: 100%;
+    width: 100%;
+}
+
+.slider__container{
+    overflow: hidden;
+    height: 90%;
+}
+
+.slider{
+    transition: 1s all;
+    display: flex;
+    height: 100%;
+    width: 300vw;
+
+}
+
+.slider__img{
+    object-fit: cover;
+    width: 100vw;
+    height: 100%;
+}
+
+.home__line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.home__linetext{
+    font-family: 'Ropa Sans', sans-serif;
+    font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 5px;
+/* or 14% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+
+.home__releasescont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+

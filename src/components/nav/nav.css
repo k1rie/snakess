@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    background-color: black;
+}
+
+.nav__logocontainer{
+    display: flex;
+    width: 100px;
+}
+
+.nav__links{
+display: flex;
+justify-content: space-between;
+width: 500px;
+}
+
+.nav__link{
+font-family: 'Quicksand', sans-serif;font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 5px;
+/* or 20% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+backdrop-filter: blur(4px);
+}
+
+.nav__searchcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 300px;
+    height: 40px;
+}
+
+.nav__searchinput{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 230px;
+    height: 40px;
+    border-radius: 45px;
+    background: #6F6C6C;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav__searchinput::placeholder{
+text-align: center;
+font-family: Quicksand;
+font-style: normal;
+font-weight: normal;
+
+color: #FFFFFF;
+
+opacity: 0.5;
+}
+.nav__searchinput:focus{
+outline: none;
+}
+
+.nav__searchimg{
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+}
