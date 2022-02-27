@@ -4,6 +4,7 @@ import Home from "./components/home"
 import Search from "./components/search/search";
 import Nav from "./components/nav/nav"
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import "./App.css"
 
 function App() {
 
