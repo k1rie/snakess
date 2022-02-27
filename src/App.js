@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react";
 import Home from "./components/home"
-import "./app.css"
 import Search from "./components/search/search";
 import Nav from "./components/nav/nav"
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
