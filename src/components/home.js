@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Nav from "./nav/nav"
 import "./home.css"
 import Sliderimg1 from "./recursos/slider1.jpeg"
 import Sliderimg2 from "./recursos/slider2.jpeg"
