@@ -66,18 +66,6 @@ return(
 <img className="slider__img img3" src={Sliderimg3}/>
 </div>
 </div>
-<div className="home__releases">
-<div className="home__line">
-<p className="home__linetext">New Releases</p>
-</div>
-<div className="home__releasescont">
-<img className="home__sneakers" src={Sneaker1}/>
-<img className="home__sneakers" src={Sneaker2}/>
-<img className="home__sneakers" src={Sneaker3}/>
-<img className="home__sneakers" src={Sneaker4}/>
-<img className="home__sneakers" src={Sneaker5}/>
-</div>
-</div>
 </div>
 )
 } 
