@@ -2,7 +2,7 @@ import React, { useEffect,useState } from "react";
 import "./nav.css";
 import Logo from "../recursos/logo.png";
 import Heart from "../recursos/heart.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 
 function Nav(props) {
@@ -18,7 +18,13 @@ function Nav(props) {
     });
   }
   function redirect(){
+    if(process.env.NODE_ENV === "production"){
+     apikey =  process.env.REACT_APP_APIKEY_PRODUCTION
+    }else{
+      apikey =  process.env.REACT_APP_APIKEY
+    }
     const searchinput = document.querySelector(".nav__searchinput")
+    var apikey;
     searchinput.addEventListener("keyup",(e)=>{
 if(e.key === "Enter"){
   document.querySelector(".sk-chase").style.display = "block"
@@ -26,7 +32,7 @@ if(e.key === "Enter"){
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "the-sneaker-database.p.rapidapi.com",
-        "x-rapidapi-key": "b63a9ffa7amsh59f0ec661625c92p17f5b2jsn21493c2f76dc"
+        "x-rapidapi-key": apikey
       }
     }).then((response)=>response.json()).then((response)=>{console.log(response);props.pasdata(response);setCheck(true);navigate("/search");  document.querySelector(".sk-chase").style.display = "none";
 
@@ -44,7 +50,7 @@ if(e.key === "Enter"){
   return (
     <div className="nav__container">
       <div className="nav__logocontainer">
-        <img src={Logo} className="nav__logo" />
+<Link to="/"><img src={Logo} className="nav__logo" /></Link>
       </div>
       <div className="nav__links">
         <a className="nav__link">Nuevos Lanzamientos</a>
