@@ -14,7 +14,7 @@ function Home(props){
         const container = document.querySelector(".slider__container")
         const slider = document.querySelector(".slider")
         var contador = 0
-        console.log(slider)
+
 
         setInterval(()=>{
             slider.style.transition = "1s all"
@@ -27,7 +27,7 @@ slider.style.transform = `translateX(-${contador*100}vw)`
 
 
 
-  console.log(contador)
+
 
 function sl(){
     slider.style.transition = "none"
