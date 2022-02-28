@@ -3,6 +3,7 @@ import "./nav.css";
 import Logo from "../recursos/logo.png";
 import Heart from "../recursos/heart.png";
 import { useNavigate, Link } from "react-router-dom";
+import { computeHeadingLevel } from "@testing-library/react";
 
 
 function Nav(props) {
@@ -17,11 +18,16 @@ function Nav(props) {
       searchicon.style.display = "block";
     });
   }
+
+
+
   function redirect(){
     if(process.env.NODE_ENV === "production"){
      apikey =  process.env.REACT_APP_APIKEY_PRODUCTION
+     console.log("production")
     }else{
       apikey =  process.env.REACT_APP_APIKEY
+      console.log("development")
     }
     const searchinput = document.querySelector(".nav__searchinput")
     var apikey;
