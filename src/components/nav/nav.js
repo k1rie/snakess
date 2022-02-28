@@ -22,12 +22,9 @@ function Nav(props) {
     var apikey;
     if(process.env.REACT_APP_NODE_ENV === "production"){
       apikey =  process.env.REACT_APP_APIKEY_PRODUCTION
-      console.log("production")
      }else{
        apikey =  process.env.REACT_APP_APIKEY
-       console.log("development")
      }
-    console.log(apikey);
     searchinput.addEventListener("keyup", (e) => {
       if (e.key === "Enter") {
         document.querySelector(".sk-chase").style.display = "block";
@@ -43,7 +40,6 @@ function Nav(props) {
         )
           .then((response) => response.json())
           .then((response) => {
-            console.log(response);
             props.pasdata(response);
             setCheck(true);
             navigate("/search");
@@ -64,9 +60,7 @@ function Nav(props) {
         </Link>
       </div>
       <div className="nav__links">
-        <a className="nav__link">Nuevos Lanzamientos</a>
-        <a className="nav__link">Hombre</a>
-        <a className="nav__link">Mujeres</a>
+
       </div>
       <div class="sk-chase">
         <div class="sk-chase-dot"></div>

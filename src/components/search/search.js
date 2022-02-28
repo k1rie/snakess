@@ -9,7 +9,6 @@ function showdata(){
     console.log(props.data)
     props.data.results.map((item)=>{
         return <Card title={item.name} price={item.retailPrice} marketvalue={item.estimatedMarketValue} sneakers={item.image.small}/>
-console.log(item)
     })
 }
 
@@ -17,8 +16,7 @@ console.log(item)
         <div className="search">
 <div className="search__content">
     {props.data.results.map((item,index)=>{
-        return (<Card key={index} title={item.name} price={item.retailPrice} marketvalue={item.estimatedMarketValue} marca={item.brand} sneakers={item.image.small}/>)
-console.log(item)
+        return (<Card key={index} link={item.links.flightClub} title={item.name} price={item.retailPrice} marketvalue={item.estimatedMarketValue} marca={item.brand} sneakers={item.image.small}/>)
     })}
 </div>
         </div>

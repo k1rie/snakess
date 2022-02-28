@@ -3,6 +3,7 @@ import "./card.css"
 
 function Card(props){
     return(
+<a href={props.link} className="cardredirect">
 <div className="card">
     <p className="card__title">{props.title}</p>
     <div className="card__main">
@@ -14,6 +15,7 @@ function Card(props){
 <p>{props.marca}</p>
     </div>
 </div>
+</a>
     )
 }
 
