@@ -23,3 +23,15 @@ body{
     gap: 50px;
 }
 
+@media screen and (max-width:1500px) {
+    .search__content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}
+
+@media screen and (max-width:955px) {
+    .search__content{
+        grid-template-columns: 1fr;
+    }
+}
